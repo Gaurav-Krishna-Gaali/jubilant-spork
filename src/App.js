@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import logo from "./assets/eden.png";
 
 function App() {
   useEffect(() => {
@@ -52,10 +53,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App ">
+    <div className=" p-5 ">
       <form action="#">
-        <h1 className="text-center">Registration Form</h1>
-        <div class="progressbar">
+        <div className="items-center justify-center flex">
+          <img src={logo} alt="logo-eden" />
+        </div>
+        <div class="progressbar ">
           <div class="progress" id="progress"></div>
 
           <div class="progress-step progress-step-active" data-title=""></div>
@@ -64,24 +67,34 @@ function App() {
           <div class="progress-step" data-title=""></div>
         </div>
 
-        <div className="">
-          <h1 className="text-center font-bold text-2xl ">
-            Welcome! First things first...
-          </h1>
-
-          <span className="text-center ">
-            You can always change them later.
-          </span>
-        </div>
         {/* <!-- Steps --> */}
         <div class="form-step form-step-active">
-          <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" />
+          <div className="flex flex-col ">
+            <h1 className="text-center font-bold text-2xl ">
+              Welcome! First things first...
+            </h1>
+
+            <span className="text-center ">
+              You can always change them later.
+            </span>
           </div>
           <div class="input-group">
-            <label for="position">Position</label>
-            <input type="text" name="position" id="position" />
+            <label for="username">Full Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Steve Jobs"
+            />
+          </div>
+          <div class="input-group">
+            <label for="position">Display Name</label>
+            <input
+              type="text"
+              name="position"
+              id="position"
+              placeholder="Steve"
+            />
           </div>
           <div class="">
             <a href="#" class="btn btn-next width-50 ml-auto">
@@ -90,7 +103,7 @@ function App() {
           </div>
         </div>
 
-        <div class="form-step">
+        <div class="form-step phone">
           <div class="input-group">
             <label for="phone">Phone</label>
             <input type="text" name="phone" id="phone" />
@@ -127,17 +140,26 @@ function App() {
           </div>
         </div>
         <div class="form-step">
-          <div class="input-group">
+          {/* <div class="input-group">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" />
-          </div>
-          <div class="input-group">
+          </div> */}
+          {/* <div class="input-group">
             <label for="confirmPassword">Confirm Password</label>
             <input
               type="password"
               name="confirmPassword"
               id="confirmPassword"
             />
+          </div> */}
+          <div className="flex flex-col ">
+            <h1 className="text-center font-bold text-2xl ">
+              Welcome! First things first...
+            </h1>
+
+            <span className="text-center ">
+              You can always change them later.
+            </span>
           </div>
           <div class="btns-group">
             <a href="#" class="btn btn-prev">

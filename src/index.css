@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: rgb(11, 78, 179);
+  --primary-color: rgb(83, 31, 204);
 }
 
 *,
@@ -29,7 +29,7 @@ label {
 input {
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem 1em 0.5rem 1em;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
