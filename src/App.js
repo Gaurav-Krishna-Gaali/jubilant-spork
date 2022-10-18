@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import logo from "./assets/eden.png";
+import check_logo from "./assets/Check_logo.png";
 
 function App() {
   useEffect(() => {
@@ -53,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <div className=" p-5 ">
+    <div className=" p-5 container ">
       <form action="#">
         <div className="items-center justify-center flex">
           <img src={logo} alt="logo-eden" />
@@ -69,8 +70,8 @@ function App() {
 
         {/* <!-- Steps --> */}
         <div class="form-step form-step-active">
-          <div className="flex flex-col ">
-            <h1 className="text-center font-bold text-2xl ">
+          <div className="flex flex-col  ">
+            <h1 className="text-center font-bold text-3xl md:text-2xl  ">
               Welcome! First things first...
             </h1>
 
@@ -104,6 +105,15 @@ function App() {
         </div>
 
         <div class="form-step phone">
+          <div className="flex flex-col p-5  ">
+            <h1 className="text-center font-bold text-2xl ">
+              Let's set up a home for all your work
+            </h1>
+
+            <h2 className="text-center text-">
+              You can always create another workspace later.
+            </h2>
+          </div>
           <div class="input-group">
             <label for="phone">Phone</label>
             <input type="text" name="phone" id="phone" />
@@ -152,20 +162,23 @@ function App() {
               id="confirmPassword"
             />
           </div> */}
-          <div className="flex flex-col ">
-            <h1 className="text-center font-bold text-2xl ">
-              Welcome! First things first...
+          <div className="flex mt-20 flex-col items-center justify-center">
+            <img src={check_logo} alt="" />
+          </div>
+          <div className="flex flex-col p-5 gap-4 ">
+            <h1 className="text-center font-bold text-4xl ">
+              Congratulations, Eren!
             </h1>
 
-            <span className="text-center ">
-              You can always change them later.
+            <span className="text-center text-">
+              You have completed onboarding, you can start using the eden
             </span>
           </div>
-          <div class="btns-group">
-            <a href="#" class="btn btn-prev">
-              Previous
+          <div class="btns-group mt-5">
+            <a href="#" class="btn btn-prev w-full">
+              Launch Eden
             </a>
-            <input type="submit" value="Submit" class="btn" />
+            {/* <input type="submit" value="Submit" class="btn" /> */}
           </div>
         </div>
       </form>
